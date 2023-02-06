@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+@import "variables";
+@import "functions";
+@import "mixins";
+@import "App";
+@import "Card";
+@import "Thanks";
+@import "Rating";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", Arial, sans-serif;
+  background-color: $very-dark-blue;
+  font-weight: $bold;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+// rating and thanks style (what they share)
+.heading {
+  // fs, lh, color, pb
+  @include text-style(rem(28px), 1.25, hsl(0, 0%, 100%), rem(15px));
+}
+
+.text {
+  @include text-style(rem(15px), 1.6, $light-grey, rem(24px));
+  font-weight: $normal;
+}
+
+@media (max-width: 425px) {
+  .heading {
+    font-size: rem(24px);
+    padding-bottom: rem(10px);
+  }
+  .text {
+    font-size: rem(14px);
+  }
+}

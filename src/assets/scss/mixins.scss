@@ -1,0 +1,16 @@
+@mixin flex-oval ($width, $height) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $dark-blue;
+  border-radius: 50%;
+  width: $width;
+  height: $height;
+}
+
+@mixin text-style ($font-size, $line-height, $color, $padding-bottom) {
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+  padding-bottom: $padding-bottom;
+}

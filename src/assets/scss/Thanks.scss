@@ -1,0 +1,41 @@
+.thanks {
+  padding: rem(45px) rem(40px) rem(45px) rem(32px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  &__image {
+    padding-bottom: rem(32px);
+  }
+  &__text-selected {
+    background-color: $dark-blue;
+    color: $orange;
+    padding: rem(4px) rem(20px);
+    margin-bottom: rem(32px);
+    border-radius: rem(22px);
+    font-size: rem(15px);
+    font-weight: $normal;
+    line-height: 1.6;
+  }
+
+  .heading {
+    padding-bottom: rem(7px);
+  }
+
+  .text {
+    padding-bottom: 0;
+  }
+  
+  @media (max-width: 425px) {
+      padding: rem(34px) rem(25px) rem(37px) rem(24px);
+      &__image {
+        padding-bottom: rem(24px);
+      }
+      &__text-selected {
+        padding: rem(5px) rem(12px);
+        margin-bottom: rem(29px);
+        font-size: rem(14px);
+      }
+  }
+}
+
